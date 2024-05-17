@@ -15,7 +15,7 @@ app.use(fileUpload());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(cors({ origin: "https://blogbackend.asherdn.com", credentials: true }));
+app.use(cors({ origin: "https://blog.asherdn.com", credentials: true }));
 // connect to DB
 try {
   mongoose.connect(process.env.mongoUrl);
